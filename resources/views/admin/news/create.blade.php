@@ -8,7 +8,6 @@
       <title>MyNews</title>
     </head>
     <body>
-      <h1>Myニュース作成画面</h1>
       @extends('layouts.admin')
       @section('title', 'ニュースの新規作成')
 
