@@ -30,11 +30,9 @@ rel="stylesheet" type="text/css">
 
         <!-- Styles -->
         {{-- Laravel標準で用意されているCSSを読み込みます --}}
-        <link href="{{ secure_asset('css/app.css') }}"
-rel="stylesheet">
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         {{-- この章の後半で作成するCSSを読み込みます --}}
-        <link href="{{ secure_asset('css/admin.css') }}"
-rel="stylesheet">
+        <link href="{{ asset('css/front.css') }}" rel="stylesheet">
     </head>
     <body>
         <div id="app">
@@ -45,13 +43,17 @@ rel="stylesheet">
                     <a class="navbar-brand" href="{{ url('/') }}">
                         {{ config('app.name', 'Laravel') }}
                     </a>
-                    <button class="navbar-toggler" type="button"
-data-toggle="collapse" data-target="#navbarSupportedContent"
-aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                    <button class="navbar-toggler"
+type="button" data-toggle="collapse"
+data-target="#navbarSupportedContent"
+aria-controls="navbarSupportedContent"
+aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+</span>
                     </button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse"
+id="navbarSupportedContent">
                         <!-- Left Side Of Navbar -->
                         <ul class="navbar-nav mr-auto"></ul>
 
